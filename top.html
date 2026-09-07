@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Top Frame</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- TOP FRAME: logo + college name + links to the five pages.
+     Every link opens inside the right frame (target="rightFrame"). -->
+<body class="frame-body top-frame">
+
+    <table class="banner" width="100%" cellspacing="0" cellpadding="6">
+        <tr>
+            <td class="banner-logo">
+                <img src="glb_logo.jpg" alt="GL Bajaj Institute of Technology and Management logo">
+            </td>
+            <td class="banner-name">
+                <h1>GL Bajaj Institute of Technology &amp; Management</h1>
+                <h2>Online Book Store</h2>
+            </td>
+            <td class="banner-spacer"></td>
+        </tr>
+    </table>
+
+    <nav class="top-nav">
+        <a href="home.html" target="rightFrame">Home</a>
+        <a href="login.html" target="rightFrame" id="nav-login">Login</a>
+        <a href="registration.html" target="rightFrame">Registration</a>
+        <a href="catalogue.html" target="rightFrame">Catalogue</a>
+        <a href="cart.html" target="rightFrame" id="nav-cart">Cart</a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>

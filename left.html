@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Left Frame</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- LEFT FRAME: branch links. Clicking "CSE" loads the catalogue of CSE
+     books in the right frame, and so on for the other branches. -->
+<body class="frame-body left-frame">
+
+    <h3>Branches</h3>
+
+    <ul class="branch-list">
+        <li><a href="catalogue.html?branch=CSE" target="rightFrame">CSE</a></li>
+        <li><a href="catalogue.html?branch=ECE" target="rightFrame">ECE</a></li>
+        <li><a href="catalogue.html?branch=EEE" target="rightFrame">EEE</a></li>
+        <li><a href="catalogue.html?branch=CIVIL" target="rightFrame">CIVIL</a></li>
+    </ul>
+
+    <hr>
+
+    <ul class="branch-list secondary">
+        <li><a href="catalogue.html" target="rightFrame">All Books</a></li>
+        <li><a href="cart.html" target="rightFrame">My Cart</a></li>
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+</html>

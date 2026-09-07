@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/jpeg" href="glb_logo.jpg"> 
+</head>
+
+<!--
+    HOME PAGE - three frames (Experiment 1)
+      Top frame   : logo, college name and the main navigation links
+      Left frame  : branch links - CSE, ECE, EEE, CIVIL
+      Right frame : every page opened from the top / left frame loads here.
+                    Initially it shows the description of the web site.
+-->
+<body class="frameset">
+
+    <iframe class="frame-top" name="topFrame" src="top.html" title="Top frame"></iframe>
+
+    <iframe class="frame-left" name="leftFrame" src="left.html" title="Left frame"></iframe>
+
+    <iframe class="frame-right" name="rightFrame" src="home.html" title="Right frame"></iframe>
+
+    <!-- FOOTER: written once here, so it shows below all three frames
+         on every page of the site. -->
+    <footer class="site-footer">
+        <ul class="footer-info">
+            <li><strong>Name :</strong> Vivek Gupta </li>
+            <li><strong>Class :</strong> CSIT-2H (H1 group)</li>
+            <li><strong>Roll No. :</strong> 2501920110421</li>
+            <li class="footer-link"><strong>GitHub :</strong>
+                <a href="https://github.com/vivekgupta962/book-store"
+                   target="_blank" rel="noopener">github.com/vivekgupta962/book-store</a>
+            </li>
+        </ul>
+    </footer>
+
+    <script>
+        /* If a content page is opened on its own it sends the visitor back here
+           as index.html?page=login.html, so the frames are never lost. */
+        (function () {
+            var allowed = [
+                "home.html", "login.html", "registration.html",
+                "catalogue.html", "cart.html"
+            ];
+
+            var query = window.location.search;
+            var page = "";
+            var branch = "";
+
+            if (query.indexOf("page=") !== -1) {
+                page = query.split("page=")[1].split("&")[0];
+            }
+            if (query.indexOf("branch=") !== -1) {
+                branch = query.split("branch=")[1].split("&")[0];
+            }
+
+            for (var i = 0; i < allowed.length; i++) {
+                if (allowed[i] === page) {
+                    var url = page;
+                    if (branch !== "") {
+                        url = page + "?branch=" + branch;
+                    }
+                    document.getElementsByName("rightFrame")[0].src = url;
+                    break;
+                }
+            }
+        })();
+    </script>
+</body>
+</html>

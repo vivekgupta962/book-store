@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Catalogue - Online Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- CATALOGUE PAGE (Experiment 3).
+     Every book is shown in a table with the snapshot of its cover page, the
+     author name, the publisher, the price and an "Add to Cart" button.
+     Clicking a branch in the left frame opens this page as
+     catalogue.html?branch=CSE and only that branch is shown. -->
+<body class="frame-body right-frame">
+
+    <section class="panel catalogue-panel">
+        <h2 id="catalogue-heading">Catalogue</h2>
+
+        <p class="catalogue-hint">
+            Choose a branch from the left frame to see only the books of that branch.
+        </p>
+
+        <!-- ===================== CSE ===================== -->
+        <div class="branch-block" data-branch="CSE">
+            <h3>CSE Books</h3>
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Cover Page</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="book-row"
+                        data-id="cse1" data-title="XML Bible" data-author="Winston"
+                        data-publisher="Wiley" data-price="40.5" data-image="covers/cse1.svg">
+                        <td><img src="covers/cse1.svg" alt="XML Bible cover page" class="cover"></td>
+                        <td class="book-title">XML Bible</td>
+                        <td>Winston</td>
+                        <td>Wiley</td>
+                        <td class="price">$40.5</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="cse2" data-title="Artificial Intelligence" data-author="S. Russel"
+                        data-publisher="Princeton Hall" data-price="63" data-image="covers/cse2.svg">
+                        <td><img src="covers/cse2.svg" alt="Artificial Intelligence cover page" class="cover"></td>
+                        <td class="book-title">Artificial Intelligence</td>
+                        <td>S. Russel</td>
+                        <td>Princeton Hall</td>
+                        <td class="price">$63</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="cse3" data-title="Java 2" data-author="Watson"
+                        data-publisher="BPB Publications" data-price="35.5" data-image="covers/cse3.svg">
+                        <td><img src="covers/cse3.svg" alt="Java 2 cover page" class="cover"></td>
+                        <td class="book-title">Java 2</td>
+                        <td>Watson</td>
+                        <td>BPB Publications</td>
+                        <td class="price">$35.5</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="cse4" data-title="HTML in 24 Hours" data-author="Sam Peter"
+                        data-publisher="Sam Publication" data-price="50" data-image="covers/cse4.svg">
+                        <td><img src="covers/cse4.svg" alt="HTML in 24 Hours cover page" class="cover"></td>
+                        <td class="book-title">HTML in 24 Hours</td>
+                        <td>Sam Peter</td>
+                        <td>Sam Publication</td>
+                        <td class="price">$50</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===================== ECE ===================== -->
+        <div class="branch-block" data-branch="ECE">
+            <h3>ECE Books</h3>
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Cover Page</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="book-row"
+                        data-id="ece1" data-title="Digital Design" data-author="M. Morris Mano"
+                        data-publisher="Pearson" data-price="45" data-image="covers/ece1.svg">
+                        <td><img src="covers/ece1.svg" alt="Digital Design cover page" class="cover"></td>
+                        <td class="book-title">Digital Design</td>
+                        <td>M. Morris Mano</td>
+                        <td>Pearson</td>
+                        <td class="price">$45</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="ece2" data-title="Microelectronic Circuits" data-author="Sedra &amp; Smith"
+                        data-publisher="Oxford" data-price="72.5" data-image="covers/ece2.svg">
+                        <td><img src="covers/ece2.svg" alt="Microelectronic Circuits cover page" class="cover"></td>
+                        <td class="book-title">Microelectronic Circuits</td>
+                        <td>Sedra &amp; Smith</td>
+                        <td>Oxford</td>
+                        <td class="price">$72.5</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="ece3" data-title="Signals and Systems" data-author="Oppenheim"
+                        data-publisher="PHI" data-price="58" data-image="covers/ece3.svg">
+                        <td><img src="covers/ece3.svg" alt="Signals and Systems cover page" class="cover"></td>
+                        <td class="book-title">Signals and Systems</td>
+                        <td>Oppenheim</td>
+                        <td>PHI</td>
+                        <td class="price">$58</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="ece4" data-title="Communication Systems" data-author="Simon Haykin"
+                        data-publisher="Wiley" data-price="61.25" data-image="covers/ece4.svg">
+                        <td><img src="covers/ece4.svg" alt="Communication Systems cover page" class="cover"></td>
+                        <td class="book-title">Communication Systems</td>
+                        <td>Simon Haykin</td>
+                        <td>Wiley</td>
+                        <td class="price">$61.25</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ===================== EEE ===================== -->
+        <div class="branch-block" data-branch="EEE">
+            <h3>EEE Books</h3>
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Cover Page</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="book-row"
+                        data-id="eee1" data-title="Electrical Machines" data-author="P. S. Bimbhra"
+                        data-publisher="Khanna Publishers" data-price="48" data-image="covers/eee1.svg">
+                        <td><img src="covers/eee1.svg" alt="Electrical Machines cover page" class="cover"></td>
+                        <td class="book-title">Electrical Machines</td>
+                        <td>P. S. Bimbhra</td>
+                        <td>Khanna Publishers</td>
+                        <td class="price">$48</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="eee2" data-title="Power System Analysis" data-author="Hadi Saadat"
+                        data-publisher="McGraw Hill" data-price="66" data-image="covers/eee2.svg">
+                        <td><img src="covers/eee2.svg" alt="Power System Analysis cover page" class="cover"></td>
+                        <td class="book-title">Power System Analysis</td>
+                        <td>Hadi Saadat</td>
+                        <td>McGraw Hill</td>
+                        <td class="price">$66</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="eee3" data-title="Control Systems Engineering" data-author="Nagrath &amp; Gopal"
+                        data-publisher="New Age International" data-price="52.75" data-image="covers/eee3.svg">
+                        <td><img src="covers/eee3.svg" alt="Control Systems Engineering cover page" class="cover"></td>
+                        <td class="book-title">Control Systems Engineering</td>
+                        <td>Nagrath &amp; Gopal</td>
+                        <td>New Age International</td>
+                        <td class="price">$52.75</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="eee4" data-title="Power Electronics" data-author="M. H. Rashid"
+                        data-publisher="Pearson" data-price="70" data-image="covers/eee4.svg">
+                        <td><img src="covers/eee4.svg" alt="Power Electronics cover page" class="cover"></td>
+                        <td class="book-title">Power Electronics</td>
+                        <td>M. H. Rashid</td>
+                        <td>Pearson</td>
+                        <td class="price">$70</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- ==================== CIVIL ==================== -->
+        <div class="branch-block" data-branch="CIVIL">
+            <h3>CIVIL Books</h3>
+            <table class="book-table">
+                <thead>
+                    <tr>
+                        <th>Cover Page</th>
+                        <th>Book</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Price</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="book-row"
+                        data-id="civil1" data-title="Strength of Materials" data-author="R. K. Bansal"
+                        data-publisher="Laxmi Publications" data-price="42" data-image="covers/civil1.svg">
+                        <td><img src="covers/civil1.svg" alt="Strength of Materials cover page" class="cover"></td>
+                        <td class="book-title">Strength of Materials</td>
+                        <td>R. K. Bansal</td>
+                        <td>Laxmi Publications</td>
+                        <td class="price">$42</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="civil2" data-title="Surveying Vol. 1" data-author="B. C. Punmia"
+                        data-publisher="Laxmi Publications" data-price="39.5" data-image="covers/civil2.svg">
+                        <td><img src="covers/civil2.svg" alt="Surveying Vol. 1 cover page" class="cover"></td>
+                        <td class="book-title">Surveying Vol. 1</td>
+                        <td>B. C. Punmia</td>
+                        <td>Laxmi Publications</td>
+                        <td class="price">$39.5</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="civil3" data-title="Concrete Technology" data-author="M. S. Shetty"
+                        data-publisher="S. Chand" data-price="55" data-image="covers/civil3.svg">
+                        <td><img src="covers/civil3.svg" alt="Concrete Technology cover page" class="cover"></td>
+                        <td class="book-title">Concrete Technology</td>
+                        <td>M. S. Shetty</td>
+                        <td>S. Chand</td>
+                        <td class="price">$55</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+
+                    <tr class="book-row"
+                        data-id="civil4" data-title="Soil Mechanics" data-author="B. C. Punmia"
+                        data-publisher="Laxmi Publications" data-price="47.5" data-image="covers/civil4.svg">
+                        <td><img src="covers/civil4.svg" alt="Soil Mechanics cover page" class="cover"></td>
+                        <td class="book-title">Soil Mechanics</td>
+                        <td>B. C. Punmia</td>
+                        <td>Laxmi Publications</td>
+                        <td class="price">$47.5</td>
+                        <td><button type="button" class="add-btn">Add to Cart</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
