@@ -749,4 +749,70 @@ body.left-frame h3 {
     .banner-name h2 {
         font-size: 12px;
     }
-}
+}/* ============================================================ GREY THEME - Online Book Store Paste this code at the END of styles.css ============================================================ */
+
+/* 1. Main frame and borders */ body.frameset { background: #E9ECEF; }
+
+.frame-top, .frame-left { border-color: #495057 !important; }
+
+/* 2. Footer */ .site-footer { background: #212529; border-top-color: #495057; }
+
+.site-footer a:hover { background: #E9ECEF; color: #212529; }
+
+/* 3. General links */ a:link { color: #343A40; }
+
+a:visited { color: #6C757D; }
+
+a:hover { color: #FFFFFF; background-color: #495057; }
+
+a:active { color: #212529; }
+
+/* 4. Top banner and navigation */ .banner-name h1 { color: #343A40; }
+
+.top-nav { background: #343A40; }
+
+.top-nav a:hover { background: #E9ECEF; color: #212529; }
+
+.top-nav a:active { background: #CED4DA; color: #212529; }
+
+/* 5. Left sidebar */ body.left-frame { background: #E9ECEF; }
+
+body.left-frame h3 { color: #343A40; border-bottom-color: #6C757D; }
+
+.branch-list a:link, .branch-list a:visited { border-color: #CED4DA; color: #343A40; }
+
+.branch-list a:hover { background: #495057; color: #FFFFFF; border-color: #495057; }
+
+.branch-list a.active:link, .branch-list a.active:visited { background: #343A40; color: #FFFFFF; border-color: #343A40; }
+
+/* 6. Content panels and headings */ .panel h2, .panel h3 { color: #343A40; }
+
+/* 7. Home page */ .home-features .feature { background: #F8F9FA; border-color: #CED4DA; }
+
+.home-cta a:link, .home-cta a:visited { background: #495057; color: #FFFFFF; }
+
+.home-cta a:hover { background: #212529; color: #FFFFFF; }
+
+/* 8. Forms and input fields */ .form-table input[type="text"]:focus, .form-table input[type="password"]:focus, .form-table textarea:focus, .form-table select:focus { outline-color: #6C757D; border-color: #6C757D; }
+
+.button-row button[type="submit"] { background: #495057; color: #FFFFFF; }
+
+.button-row button[type="submit"]:hover { background: #212529; }
+
+/* 9. Catalogue table */ .book-table th { background: #343A40; }
+
+.book-title { color: #343A40; }
+
+.book-table tr:hover td { background: #E9ECEF; }
+
+.add-btn { background: #495057; }
+
+.add-btn:hover { background: #212529; }
+
+/* 10. Cart */ .cart-table th { background: #343A40; }
+
+.cart-title, .cart-total { color: #343A40; }
+
+/* 11. Keep checkout and status messages readable */ #checkout-btn { background: #495057; }
+
+#checkout-btn:hover { background: #212529; }
